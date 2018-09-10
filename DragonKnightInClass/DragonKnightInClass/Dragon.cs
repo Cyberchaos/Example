@@ -8,7 +8,7 @@
         public int Def { get => base.def; }
         public string Type { get => type; }
 
-        public Dragon(int hp, int atk, int def, int crit, int multiplier = 1000, int dodge = 0) : base(hp, atk, def, crit, multiplier, dodge)
+        public Dragon(int hp, int atk, int def, int crit, int multiplier = int.MaxValue, int dodge = 0) : base(hp, atk, def, crit, multiplier, dodge)
         {
             int val = r.Next(1, 5);
             switch (val)
